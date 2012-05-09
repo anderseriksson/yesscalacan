@@ -1,7 +1,8 @@
 package com.jayway.nojavacannot;
 
 /**
- * Created by Anders Eriksson.
+ * Example domain object that have difficulties providing all overloaded
+ * constructors as you'd wish for.
  */
 public class Apartment {
 
