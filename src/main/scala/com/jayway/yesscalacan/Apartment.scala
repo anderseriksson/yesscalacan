@@ -3,9 +3,9 @@ package com.jayway.yesscalacan
 /**
  * Key benefits of named params: Short. Flexible.
  * TODO: What are the characteristics of case class
- * References http://docs.scala-lang.org/sips/completed/named-and-default-arguments.html
+ * References future improvements http://docs.scala-lang.org/sips/completed/named-and-default-arguments.html
  */
-case class Apartment(rooms: Int,  hasBalcony: Boolean = false,  hasWasher: Boolean = false );
+case class Apartment(rooms: Int, hasBalcony: Boolean = false, hasWasher: Boolean = false);
 
 
 
