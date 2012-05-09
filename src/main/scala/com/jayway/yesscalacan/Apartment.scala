@@ -1,7 +1,7 @@
 package com.jayway.yesscalacan
 
 /**
- * Key benefits of named params: Short. Flexible.
+ * Key benefits of named params: Short. Flexible. Useful toString
  * TODO: What are the characteristics of case class
  * References future improvements http://docs.scala-lang.org/sips/completed/named-and-default-arguments.html
  */
