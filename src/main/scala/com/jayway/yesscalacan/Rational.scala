@@ -3,7 +3,10 @@ package com.jayway.yesscalacan
 /**
  * Example from Programming in Scala 2nd edition
  * http://booksites.artima.com/programming_in_scala_2ed/examples/html/ch06.html
- * Apache license.
+ *
+ * Copyright © 2007-2010 Artima, Inc. All rights reserved.
+ * Licensed under the Apache License, Version 2.0
+ *
  */
 
 class Rational(n: Int, d: Int) {
