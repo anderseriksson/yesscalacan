@@ -1,7 +1,7 @@
 package com.jayway.yesscalacan
 
 /**
- * Created by Anders Eriksson.
+ * Show difference between a method and a function literal.
  */
 
 class Functions {
