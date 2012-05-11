@@ -10,7 +10,7 @@ class RangeFinder {
     (s min, s max)
   }
 
-  
+
 //scala> new RangeFinder()
 //  res0: com.jayway.yesscalacan.RangeFinder = com.jayway.yesscalacan.RangeFinder@6c18520d
 //  scala> res0.findMinMax(List(1,2,3))
