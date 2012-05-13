@@ -1,5 +1,3 @@
-package com.jayway.yesscalacan
-
 /**
  * Idea: show concept of apply() and unApply() methods. Perhaps this is just a generalization of
  * case classes so perhaps it is not worth it?
@@ -11,15 +9,20 @@ package com.jayway.yesscalacan
 
 object Family {
 
-  def apply(familyMember: FamilyMember*): List[FamilyMember] = {familyMember.toList}
+  def apply(familyMember: FamilyMember*): List[FamilyMember] = {
+    familyMember.toList
+  }
 
-//  def unapply ...
+  //  def unapply ...
 
 }
 
-abstract class FamilyMember;
+sealed abstract class FamilyMember;
 
 class Father extends FamilyMember;
+
 class Mother extends FamilyMember;
+
 class Daughter extends FamilyMember;
+
 class Son extends FamilyMember;

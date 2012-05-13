@@ -1,5 +1,3 @@
-package com.jayway.yesscalacan
-
 /**
  * Key benefits of named params: Short. Flexible. Useful toString
  * TODO: What are the characteristics of case class
@@ -12,11 +10,11 @@ case class Apartment(rooms: Int, hasBalcony: Boolean = false, hasWasher: Boolean
 
 // D E M O
 
-//scala> import com.jayway.yesscalacan.Apartment
-//import com.jayway.yesscalacan.Apartment
+//scala> import Apartment
+//import Apartment
 
 //scala> new Apartment(4)
-//res4: com.jayway.yesscalacan.Apartment = Apartment(4,false,false)
+//res4: Apartment = Apartment(4,false,false)
 
 //scala> new Apartment(4, hasWasher = true)
-//res5: com.jayway.yesscalacan.Apartment = Apartment(4,false,true)
+//res5: Apartment = Apartment(4,false,true)
