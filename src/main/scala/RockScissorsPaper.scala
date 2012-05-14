@@ -4,6 +4,8 @@
  * Created by Anders Eriksson.
  * http://en.wikipedia.org/wiki/Rock-paper-scissors
  *
+ *  Should try to find a better exampel with input that sometimes is
+ *  ignorable (thus using _ ) and
  */
 
 class RockScissorsPaper {
@@ -23,7 +25,7 @@ class RockScissorsPaper {
 
   }
 
-  
+
 
 
 }

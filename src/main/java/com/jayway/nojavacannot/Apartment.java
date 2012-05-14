@@ -3,7 +3,8 @@ package com.jayway.nojavacannot;
 /**
  * Example domain object that have difficulties providing all overloaded
  * constructors as you'd wish for.
- * See Effective Java example for another case of "telescope constructors"
+ * See Effective Java example for another case of "telescoping constructor (anti-)pattern"
+ *
  */
 public class Apartment {
 
