@@ -1,4 +1,4 @@
-name := "TestProject"
+name := "Demo project Yes Scala Can!"
  
 version := "1.0-SNAPSHOT"
  
