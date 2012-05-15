@@ -1,4 +1,6 @@
 /**
+ * Demonstration of DSL and operators being methods.
+ *
  * Example from Programming in Scala 2nd edition
  * http://booksites.artima.com/programming_in_scala_2ed/examples/html/ch06.html
  *

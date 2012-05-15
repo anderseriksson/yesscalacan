@@ -5,6 +5,7 @@ import java.util.Collection;
 
 /**
  * Created by Anders Eriksson.
+ * TODO demo a call from Scala to Java code. (No need for Maven project, this can be done with sbt)
  */
 public class RangeFinder {
 
