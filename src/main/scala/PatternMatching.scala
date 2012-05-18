@@ -5,9 +5,9 @@ object PatternMatching {
 
 
   def country(ip:IP):String = ip match {
-    case IP( "10", _, _, _ )  => "IANA Reserved private 24-bit network range"
-    case IP( "172", "16", _, _ )  => "IANA Reserved private 20-bit network range"
-    case IP( "192", "168", _, _ )  => "IANA Reserved private 16-bit network range"
+    case IP( "10", _, _, _ )          => "IANA Reserved private 24-bit network range"
+    case IP( "172", "16", _, _ )      => "IANA Reserved private 20-bit network range"
+    case IP( "192", "168", _, _ )     => "IANA Reserved private 16-bit network range"
     case IP( "192", "71", "170", _ )  => "Sweden"
     case IP( "209", "47", "43", _ )   => "US"
     case _                            => "Not known"
