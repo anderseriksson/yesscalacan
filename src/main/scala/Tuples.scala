@@ -1,9 +1,10 @@
 /**
- * Example to demonstrate tuples. Here we have a method that return two values, a min and a max
- *
+ * Created by Anders Eriksson.
  */
 
-class RangeFinder {
+object Tuples {
+
+} class RangeFinder {
   def findMinMax(s: Seq[Int]): (Int, Int) = {
     (s min, s max)
   }

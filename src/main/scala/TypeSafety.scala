@@ -15,4 +15,13 @@ object TypeSafety {
     for (A(s) <- in) yield A(s)
   }
 
+
+//  scala> import TypeSafety._
+//  import TypeSafety._
+//
+//  scala> justAs(List(A("1"), None, A("2"), None, "a"))
+//  res1: List[TypeSafety.A] = List(A(1), A(2))
+
+
+
 }
