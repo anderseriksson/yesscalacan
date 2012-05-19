@@ -4,11 +4,11 @@
 
 object Tuples {
 
-} class RangeFinder {
-  def findMinMax(s: Seq[Int]): (Int, Int) = {
-    (s min, s max)
+  class RangeFinder {
+    def findMinMax(s: Seq[Int]): (Int, Int) = {
+      (s min, s max)
+    }
   }
-
 
   //scala> new RangeFinder()
   //  res0: com.jayway.yesscalacan.RangeFinder = com.jayway.yesscalacan.RangeFinder@6c18520d
