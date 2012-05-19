@@ -15,6 +15,14 @@ object TypeSafety {
     for (A(s) <- in) yield A(s)
   }
 
+//  /**
+//   * Example of type pattern in a for loop THAT DOES NOT COMPILE
+//   * @param in
+//   * @return
+//   */
+//  def justStrings(in: List[Any]): List[String] = {
+//    for (s: String <- in) yield s
+//  }
 
 //  scala> import TypeSafety._
 //  import TypeSafety._
