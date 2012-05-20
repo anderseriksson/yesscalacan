@@ -10,13 +10,18 @@ object Tuples {
     }
   }
 
-  //scala> new RangeFinder()
-  //  res0: com.jayway.yesscalacan.RangeFinder = com.jayway.yesscalacan.RangeFinder@6c18520d
-  //  scala> res0.findMinMax(List(1,2,3))
-  //  res2: (Int, Int) = (0,3)
-  //  scala> val (min, max) = res0.findMinMax(List(1,2,3,3))
-  //  min: Int = 1
-  //  max: Int = 3
+//  scala> new RangeFinder
+//  res0: Tuples.RangeFinder = Tuples$RangeFinder@1a15deb6
+
+//comment on consiseness - no paranthesis no semi colon
+
+//      scala> res0.findMinMax(List(1,2,3))
+//      res3: (Int, Int) = (1,3)
+//
+//      scala> val (a,b) = res0.findMinMax(List(1,3,4,5))
+//      a: Int = 1
+//      b: Int = 5
+
 
 
 }
