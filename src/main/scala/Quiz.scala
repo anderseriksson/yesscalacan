@@ -1,11 +1,11 @@
 /**
- * Created by Anders Eriksson.
+ * Quiz for Scala presentation.
  */
 
 object Quiz {
 
   def whatIsThisMethodDoing(in: String): String = {
-    in.toList.map( x => if ("aeiouy".toList.contains(x)) x else x + "o" + x ).mkString
+    in.toList.map( x => if ("bcdfghjklmnpqrstvxz".toList.contains(x)) x + "o" + x else x ).mkString
   }
 
 }
