@@ -5,6 +5,7 @@ package com.jayway.nojavacannot;
  * constructors as you'd wish for.
  * See Effective Java example for another case of "telescoping constructor (anti-)pattern"
  *
+ * CASE CLASS DEMO
  */
 public class Apartment {
 

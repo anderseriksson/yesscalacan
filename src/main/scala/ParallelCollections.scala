@@ -5,7 +5,7 @@
 object ParallelCollections {
 
 // Open Activity Monitor and CPU History graph!
-  
+
 /*
 http://stackoverflow.com/questions/9547160/how-to-measure-time-of-a-statement-in-scala-console
  */

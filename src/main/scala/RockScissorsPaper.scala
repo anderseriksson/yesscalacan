@@ -1,7 +1,8 @@
 /**
  * Demonstrate match case with recursion and guard and default drop out
  *
- * Created by Anders Eriksson.
+ * Extra demo if needed
+ *
  * http://en.wikipedia.org/wiki/Rock-paper-scissors
  *
  */

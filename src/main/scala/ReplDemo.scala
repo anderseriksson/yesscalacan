@@ -1,10 +1,14 @@
 /**
- * Created by Anders Eriksson.
+ * Extra material showing REPLs ability to execute a shell command and work with the result
  */
 
 object ReplDemo {
 
+  // http://stackoverflow.com/questions/1948044/printing-unicode-from-scala-interpreter
+  // export JAVA_OPTS="-Dfile.encoding=UTF-8"
 
+
+// COMBINATION DEMO OF REPL AND OF POWERFUL COLLECTIONS AND OF HIGHER ORDER FUNCTIONS
 
 //  684  :sh find .. -name *.scala
 //  687  res2.lines

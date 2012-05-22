@@ -1,5 +1,5 @@
 /**
- * Created by Anders Eriksson.
+ * Demo of pattern used outside match case.
  */
 
 object TypeSafety {

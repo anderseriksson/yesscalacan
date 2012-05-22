@@ -1,6 +1,18 @@
 
 object PatternMatching {
 
+  //FIRST SHOW MATCHER FROM CASE CLASS object
+
+  //THEN SHOW THE ONE BELOW
+
+  //or perhaps not
+
+
+  // DEMO DONE!
+
+
+
+
   case class IP(byte1:String = "127", byte2:String = "0", byte3:String = "0", byte4:String = "1")
 
 
@@ -12,5 +24,7 @@ object PatternMatching {
     case IP( "209", "47", "43", _ )   => "US"
     case _                            => "Not known"
   }
+
+
 
 }

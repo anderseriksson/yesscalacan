@@ -38,5 +38,23 @@ object PowerfulCollections {
 //  res58: String = Anders and Amir is presenting Scala using REPL
 //
 
+// NAME LIST DEMO
+
+//  scala> List("Anders","Amir")
+//  res9: List[java.lang.String] = List(Anders, Amir)
+//
+//  scala> List("Anders","Amir").map(x => (x, x.size)
+//    | )
+//  res11: List[(java.lang.String, Int)] = List((Anders,6), (Amir,4))
+//
+//  scala> List("Anders","Amir").map(x => (x, x.size)).zipWithIndex
+//  res12: List[((java.lang.String, Int), Int)] = List(((Anders,6),0), ((Amir,4),1))
+//
+//  scala> List("Anders","Amir").map(x => (x, x.size)).zipWithIndex.maxBy( x => x._1._2 )
+//  res13: ((java.lang.String, Int), Int) = ((Anders,6),0)
+//
+//  scala> List("Anders","Amir").map(x => (x, x.size)).zipWithIndex.maxBy( x => x._1._2 )._2
+//  res14: Int = 0
+
 
 }
