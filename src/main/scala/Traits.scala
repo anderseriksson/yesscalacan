@@ -4,70 +4,70 @@ object Traits {
 
 
   abstract class AbstractDictionary {
-    def addWord(word: String)
+    def addWord(word: String): String
   }
 
   trait Lower extends AbstractDictionary {
-    abstract override def addWord(word: String) {
+    abstract override def addWord(word: String): String = {
       super.addWord(word.toLowerCase)
     }
   }
 
   trait Trimmer extends AbstractDictionary {
-    abstract override def addWord(word: String) {
+    abstract override def addWord(word: String): String = {
       super.addWord(word.trim)
     }
   }
 
   trait Upper extends AbstractDictionary {
-    abstract override def addWord(word: String) {
+    abstract override def addWord(word: String): String = {
       super.addWord(word.toUpperCase)
+    }
+  }
+
+  trait Adder extends AbstractDictionary {
+    abstract override def addWord(word: String): String = {
+      super.addWord(word + " & Anders")
     }
   }
 
 
   class Dictionary extends AbstractDictionary {
-    private val words = mutable.Set[String]()
 
-    override def addWord(word: String) {
-      words.add(word)
+    override def addWord(word: String): String = {
+      word
     }
-
-    def wordsList: List[String] = words.toList
 
   }
 
 
-
-
-
-
-
-
-
-
   /*
-    scala> import Traits._
-    import Traits._
 
+scala> import Traits._
+import Traits._
 
-
-    scala> val dic = new Dictionary with Lower with Trimmer
-    dic: Traits.Dictionary with Traits.Lower with Traits.Trimmer = $anon$1@339dd9
+scala> val d1 = new Dictionary with Upper with Trimmer
+d1: Traits.Dictionary with Traits.Upper with Traits.Trimmer = $anon$1@6dcfef5e
 
      // NOTE THIS IS DONE AT INSTANTIATION AND NOT AT CLASS DECLARATION!!!!
 
-    scala> dic.addWord("     aMiR    ")
+scala> d1.addWord("Amir")
+res0: String = AMIR
 
-    scala> dic.wordsList
-    res1: List[String] = List(amir)
+scala> d1.addWord("Amir ")
+res1: String = AMIR
 
-    scala> val dic2 = new Dictionary with Trimmer with Upper
-    dic2: Traits.Dictionary with Traits.Trimmer with Traits.Upper = $anon$1@bec2
+scala> val d1 = new Dictionary with Upper with Adder
+d1: Traits.Dictionary with Traits.Upper with Traits.Adder = $anon$1@64c8dcb7
 
-    scala> dic2.addWord("     aMiR    ")
+scala> d1.addWord("Amir")
+res2: String = AMIR & ANDERS
 
-    scala> dic2.wordsList
-    res3: List[String] = List(AMIR)
-  */
+scala> val d1 = new Dictionary with Adder with Upper
+d1: Traits.Dictionary with Traits.Adder with Traits.Upper = $anon$1@3c1e9711
+
+scala> d1.addWord("Amir")
+res3: String = AMIR & Anders
+
+ */
 }
