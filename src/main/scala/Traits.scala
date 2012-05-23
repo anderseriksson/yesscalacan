@@ -3,14 +3,11 @@ import scala.collection.mutable
 object Traits {
 
 
-
-
-
   abstract class AbstractDictionary {
     def addWord(word: String)
   }
 
-  trait CaseInsensitiveWord extends AbstractDictionary {
+  trait Lower extends AbstractDictionary {
     abstract override def addWord(word: String) {
       super.addWord(word.toLowerCase)
     }
@@ -22,7 +19,7 @@ object Traits {
     }
   }
 
-  trait UpperCaseWord extends AbstractDictionary {
+  trait Upper extends AbstractDictionary {
     abstract override def addWord(word: String) {
       super.addWord(word.toUpperCase)
     }
@@ -53,16 +50,20 @@ object Traits {
     scala> import Traits._
     import Traits._
 
-    scala> val dic = new Dictionary with CaseInsensitiveWord with Trimmer
-    dic: Traits.Dictionary with Traits.CaseInsensitiveWord with Traits.Trimmer = $anon$1@339dd9
+
+
+    scala> val dic = new Dictionary with Lower with Trimmer
+    dic: Traits.Dictionary with Traits.Lower with Traits.Trimmer = $anon$1@339dd9
+
+     // NOTE THIS IS DONE AT INSTANTIATION AND NOT AT CLASS DECLARATION!!!!
 
     scala> dic.addWord("     aMiR    ")
 
     scala> dic.wordsList
     res1: List[String] = List(amir)
 
-    scala> val dic2 = new Dictionary with Trimmer with UpperCaseWord
-    dic2: Traits.Dictionary with Traits.Trimmer with Traits.UpperCaseWord = $anon$1@bec2
+    scala> val dic2 = new Dictionary with Trimmer with Upper
+    dic2: Traits.Dictionary with Traits.Trimmer with Traits.Upper = $anon$1@bec2
 
     scala> dic2.addWord("     aMiR    ")
 
