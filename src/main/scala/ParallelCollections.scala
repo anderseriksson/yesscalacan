@@ -24,10 +24,14 @@ http://stackoverflow.com/questions/9547160/how-to-measure-time-of-a-statement-in
 
 // Open activity monitor
 
-//  scala> (1 to 1000*1000*1000).par.max
-//  res13: Int = 1000000000
+//  scala> (1 to 100000000).aggregate( List[Int]() ) ( (list: List[Int], b: Int ) =>  (list:+b).sortWith(_>_).take(5) , (a: List[Int], b: List[Int]) => (a ::: b).sortWith(_>_).take(5) )
+//  40665761 microseconds
+//    res2: List[Int] = List(100000000, 99999999, 99999998, 99999997, 99999996)
 //
-//  scala> (1 to 1000*1000*1000).max
-//  res14: Int = 1000000000
+//  scala> (1 to 100000000).par.aggregate( List[Int]() ) ( (list: List[Int], b: Int ) =>  (list:+b).sortWith(_>_).take(5) , (a: List[Int], b: List[Int]) => (a ::: b).sortWith(_>_).take(5) )
+//  33804573 microseconds
+//    res3: List[Int] = List(100000000, 99999999, 99999998, 99999997, 99999996)
+//
+
 
 }
