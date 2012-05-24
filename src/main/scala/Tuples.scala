@@ -1,12 +1,29 @@
-/**
- * Created by Anders Eriksson.
- */
 
 object Tuples {
 
   def findMinMax(s: Seq[Int]): (Int, Int) = {
     (s min, s max)
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Talk about REPL
 

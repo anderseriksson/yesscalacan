@@ -1,12 +1,29 @@
 object CaseClasses {
 
-  /**
-   * Key benefits of named params: Short. Flexible. Useful toString. Copy method.
-   * TODO: What are the characteristics of case class
-   * References future improvements http://docs.scala-lang.org/sips/completed/named-and-default-arguments.html
-   */
 
-  case class Apartment(rooms: Int, hasBalcony: Boolean = false, hasWasher: Boolean = false)
+
+
+
+  case class Apartment(rooms: Int,
+                       hasBalcony: Boolean = false,
+                       hasWasher: Boolean = false)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   // D E M O
@@ -36,26 +53,36 @@ object CaseClasses {
   
   //PATTERN MATCH DEMO FIRST SHOW THIS CODE
 
-//  scala> categorize(res0)
+//  scala> createSellingHeadlineFor(res0)
 //  res1: String = För studenter
 //
-//  scala> categorize(Apartment(7,hasWasher = true))
+//  scala> createSellingHeadlineFor(Apartment(7,hasWasher = true))
 //  res2: String = Tvättmaskin ingår!
 //
-//    scala> categorize(Apartment(8,hasWasher = true))
+//    scala> createSellingHeadlineFor(Apartment(8,hasWasher = true))
 //  res3: String = Paradvåning
 
 // CLAIM It is very easy to read and understand what this code does!!!
 
 // BACK TO PATTERNMATCH object
 
-  def categorize(apartment: Apartment): String = {
+
+
+
+
+  def createSellingHeadlineFor(apartment: Apartment): String = {
     apartment match {
-      case Apartment(x, _ , _ ) if x > 7 => "Paradvåning"
-      case Apartment(1, _ , _ ) => "För studenter"
-      case Apartment(x, true , _ ) => "Trivsam balkong med " + x + " rum!"
-      case Apartment(_, _ , true ) => "Tvättmaskin ingår!"
-      case _ => "Diverse lägenhet"
+      case Apartment(x, _ , _ ) if x > 7 => "Luxurious spacious flat"
+      case Apartment(1, _ , _ ) => "For students!"
+      case Apartment(_, true , true ) => "Both balcony and washer!"
+      case Apartment(x, true , _ ) => "Nice balcony with " + x + " rooms!"
+      case Apartment(_, _ , true ) => "Laundry machine included!"
+      case _ => "Misc flat"
     }
   }
+
+
+
+
+
 }
