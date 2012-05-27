@@ -28,8 +28,10 @@ public class RangeFinder {
         return max;
     }
 
+/*
     public static void main(String[] args) {
         RangeFinder rf = new RangeFinder();
         System.out.println(rf.findMinMax(Arrays.asList(new Integer[]{1, 2, 3, 4})));
     }
+*/
 }
