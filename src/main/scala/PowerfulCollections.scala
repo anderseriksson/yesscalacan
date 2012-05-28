@@ -5,6 +5,13 @@
 object PowerfulCollections {
 
 
+// Just like the old Effective Java told us - learn the collections and their methods - this is
+// even more rewarding in Scala - I believe... The
+
+
+
+
+// Strings are collections!
 
 //  scala> "Anders".map(_.isUpper)
 //  res21: scala.collection.immutable.IndexedSeq[Boolean] = Vector(true, false, false, false, false, false)
