@@ -25,7 +25,7 @@ object Traits {
     }
   }
 
-  trait Adder extends AbstractDictionary {
+  trait AddAnders extends AbstractDictionary {
     abstract override def addWord(word: String): String = {
       super.addWord(word + " & Anders")
     }
@@ -40,34 +40,4 @@ object Traits {
 
   }
 
-
-  /*
-
-scala> import Traits._
-import Traits._
-
-scala> val d1 = new Dictionary with Upper with Trimmer
-d1: Traits.Dictionary with Traits.Upper with Traits.Trimmer = $anon$1@6dcfef5e
-
-     // NOTE THIS IS DONE AT INSTANTIATION AND NOT AT CLASS DECLARATION!!!!
-
-scala> d1.addWord("Amir")
-res0: String = AMIR
-
-scala> d1.addWord("Amir ")
-res1: String = AMIR
-
-scala> val d1 = new Dictionary with Upper with Adder
-d1: Traits.Dictionary with Traits.Upper with Traits.Adder = $anon$1@64c8dcb7
-
-scala> d1.addWord("Amir")
-res2: String = AMIR & ANDERS
-
-scala> val d1 = new Dictionary with Adder with Upper
-d1: Traits.Dictionary with Traits.Adder with Traits.Upper = $anon$1@3c1e9711
-
-scala> d1.addWord("Amir")
-res3: String = AMIR & Anders
-
- */
 }
