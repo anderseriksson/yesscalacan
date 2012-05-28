@@ -15,8 +15,13 @@ object ParallelCollections {}
 
   trait Computation {
     def f(data:Data):Int =  {
-      Thread.sleep(10)
-      data.a + data.b
+      var result:Int = 0
+      for (i <- 1 until 1000000) {
+        result -= data.a/2
+        result += data.a * data.b
+        result -= data.b/2
+      }
+      result
     }
     def compute(list:List[Data]):Int
   }
@@ -26,7 +31,7 @@ object ParallelCollections {}
   }
 
   object ParallelImplementation extends Computation {
-    def compute(list:List[Data]):Int = list.par.map{f}.par.max
+    def compute(list:List[Data]):Int = list.par.map{f}.max
   }
 
   object ParallelExperiment {
