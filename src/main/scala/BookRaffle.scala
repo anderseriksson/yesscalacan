@@ -5,7 +5,7 @@ import io.BufferedSource
  * Created by Anders Eriksson.
  */
 
-object BookRaffle extends App {
+object BookRaffle {
 
   val attendeesRaw: BufferedSource = scala.io.Source.fromFile("/Users/anders/Documents/jayway/scala/scalapreso20120530/Attendees-3514705579.csv")
 
@@ -13,6 +13,8 @@ object BookRaffle extends App {
     
   val namePairList = attendeesList.map(x => (x(4) + " " +x(3)).filter(_ != '"'))
 
-  println(namePairList(util.Random.nextInt(namePairList.size)));
+  def winner() {
+    println(namePairList(util.Random.nextInt(namePairList.size)))
+  }
 
 }
