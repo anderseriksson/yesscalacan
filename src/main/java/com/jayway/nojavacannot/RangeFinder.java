@@ -8,7 +8,7 @@ public class RangeFinder {
     /**
      * Find min and max value in integer collection.
      * @param c
-     * @return
+     * @return array of two (not compile checked)
      */
     public int[] findMinMax(Collection<Integer> c) {
         int min = Integer.MAX_VALUE;
