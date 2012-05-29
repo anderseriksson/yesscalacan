@@ -74,6 +74,7 @@ public class Apartment {
                 ", hasWasher=" + hasWasher +
                 ']';
     }
-    
+
+    // ALSO A COPY METHOD WHICH I HAVE NOT DONE...
 
 }
