@@ -1,5 +1,5 @@
-import collection.immutable.List
 import io.BufferedSource
+import scala.util.Random
 
 /**
  * Created by Anders Eriksson.
@@ -13,8 +13,8 @@ object BookRaffle {
     
   val namePairList = attendeesList.map(x => (x(4) + " " +x(3)).filter(_ != '"'))
 
-  def winner() {
-    println(namePairList(util.Random.nextInt(namePairList.size)))
+  def winner():String = {
+    namePairList(Random.nextInt(namePairList.size))
   }
 
 }
